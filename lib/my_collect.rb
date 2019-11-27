@@ -1,7 +1,6 @@
-
-
+# build a method that takes any block passed,
+# yields it and returns the new value
 def my_collect(array)
-  # if block_given?
     collection = []
     i = 0
 
@@ -9,7 +8,5 @@ def my_collect(array)
       collection << yield(array[i])
       i += 1
     end
-  # else
     collection
-  # end
 end
